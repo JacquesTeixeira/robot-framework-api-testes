@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220830 15:10:37.306" rpa="false" schemaversion="3">
+<suite id="s1" name="Desafio" source="C:\Users\Jacques Teixeira\Documents\api-testes\tests\desafio.robot">
+<test id="s1-t1" name="Scenario 01: Teste bacon ipsum Method GET" line="13">
+<kw name="GET" library="RequestsLibrary">
+<var>${RESPONSE}</var>
+<arg>${URL}</arg>
+<arg>params=paras=0</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20220830 15:10:38.487" level="INFO">GET Request : url=https://baconipsum.com/?paras=0 
+ path_url=/?paras=0 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220830 15:10:38.487" level="INFO">GET Response : url=https://baconipsum.com/?paras=0 
+ status=200, reason=OK 
+ headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Tue, 30 Aug 2022 18:10:36 GMT', 'Content-Type': 'text/html; charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Cookie', 'X-Pingback': 'https://baconipsum.com/xmlrpc.php', 'Link': '&lt;https://baconipsum.com/wp-json/&gt;; rel="https://api.w.org/", &lt;https://baconipsum.com/wp-json/wp/v2/pages/4&gt;; rel="alternate"; type="application/json", &lt;https://wp.me/P6uPqz-4&gt;; rel=shortlink', 'Content-Encoding': 'gzip'} 
+ body=&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+
+&lt;!-- quit looking up my skirt steak  --&gt;
+
+&lt;head&gt;
+&lt;meta charset="UTF-8" /&gt;
+&lt;meta name="HandheldFriendly" content="True" /&gt;
+&lt;meta property="fb:pages" content="280638025309360" /&gt;
+&lt;meta name="MobileOptimized" content="320" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+&lt;title&gt;Bacon Ipsum - A Meatier Lorem Ipsum Generator&lt;/title&gt;
+&lt;meta name="blitz" content="mu-b9572eaa-3cd823e3-1364253f-dc9957c1" /&gt;
+&lt;link rel="apple-touch-icon" href="https://baconipsum.com/wp-content/themes/baconipsum-custom-theme-v2/images/apple-touch-icon.png" /&gt;
+&lt;link rel="profile" href="http://gmpg.org/xfn/11" /&gt;
+&lt;link rel="pingback" href="https://baconipsum.com/xmlrpc.php" /&gt;
+&lt;meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' /&gt;
+
+	&lt;!-- This site is optimized with the Yoast SEO plugin v19.6 - https://yoast.com/wordpress/plugins/seo/ --&gt;
+	&lt;meta name="description" content="Does your lorem ipsum text long for something a little meatier? Give our generator a try... it&amp;#039;s tasty!" /&gt;
+	&lt;link rel="canonical" href="https://baconipsum.com/" /&gt;
+	&lt;meta property="og:locale" content="en_US" /&gt;
+	&lt;meta property="og:type" content="website" /&gt;
+	&lt;meta property="og:title" content="Bacon Ipsum - A Meatier Lorem Ipsum Generator" /&gt;
+	&lt;meta property="og:description" content="Does your lorem ipsum text long for something a little meatier? Give our generator a try... it&amp;#039;s tasty!" /&gt;
+	&lt;meta property="og:url" content="https://baconipsum.com/" /&gt;
+	&lt;meta property="og:site_name" content="Bacon Ipsum" /&gt;
+	&lt;meta property="article:publisher" content="https://www.facebook.com/BaconIpsum" /&gt;
+	&lt;meta property="article:modified_time" content="2021-11-18T16:46:53+00:00" /&gt;
+	&lt;meta property="og:image" content="https://baconipsum.com/wp-content/uploads/2015/01/bacon-ipsum-square-200-200.jpg" /&gt;
+	&lt;meta property="og:image:width" content="200" /&gt;
+	&lt;meta property="og:image:height" content="200" /&gt;
+	&lt;meta property="og:image:type" content="image/jpeg" /&gt;
+	&lt;meta name="twitter:card" content="summary" /&gt;
+	&lt;meta name="twitter:site" content="@baconipsum" /&gt;
+	&lt;meta name="twitter:label1" content="Est. reading time" /&gt;
+	&lt;meta name="twitter:data1" content="1 minute" /&gt;
+	&lt;script type="application/ld+json" class="yoast-schema-graph"&gt;{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://baconipsum.com/","url":"https://baconipsum.com/","name":"Bacon Ipsum - A Meatier Lorem Ipsum Generator","isPartOf":{"@id":"https://baconipsum.com/#website"},"datePublished":"2011-06-04T02:40:21+00:00","dateModified":"2021-11-18T16:46:53+00:00","description":"Does your lorem ipsum text long for something a little meatier? Give our generator a try... it's tasty!","breadcrumb":{"@id":"https://baconipsum.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://baconipsum.com/"]}]},{"@type":"BreadcrumbList","@id":"https://baconipsum.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://baconipsum.com/#website","url":"https://baconipsum.com/","name":"Bacon Ipsum","description":"A Meatier Lorem Ipsum Generator","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://baconipsum.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}&lt;/script&gt;
+	&lt;!-- / Yoast SEO plugin. --&gt;
+
+
+&lt;link rel='dns-prefetch' href='//secure.gravatar.com' /&gt;
+&lt;link rel='dns-prefetch' href='//baconipsum.com' /&gt;
+&lt;link rel='dns-prefetch' href='//s.w.org' /&gt;
+&lt;link rel='dns-prefetch' href='//v0.wordpress.com' /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Bacon Ipsum &amp;raquo; Feed" href="https://baconipsum.com/feed/" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Bacon Ipsum &amp;raquo; Comments Feed" href="https://baconipsum.com/comments/feed/" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Bacon Ipsum &amp;raquo; Home Comments Feed" href="https://baconipsum.com/home/feed/" /&gt;
+&lt;link rel='stylesheet' id='wp-block-library-css'  href='https://baconipsum.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.1' type='text/css' media='all' /&gt;
+&lt;style id='wp-block-library-inline-css' type='text/css'&gt;
+.has-text-align-justify{text-align:justify;}
+&lt;/style&gt;
+&lt;link rel='stylesheet' id='mediaelement-css'  href='https://baconipsum.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='wp-mediaelement-css'  href='https://baconipsum.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.1' type='text/css' media='all' /&gt;
+&lt;style id='elasticpress-facet-style-inline-css' type='text/css'&gt;
+.widget_ep-facet input[type=search],.wp-block-elasticpress-facet input[type=search]{margin-bottom:1rem}.widget_ep-facet .searchable .inner,.wp-block-elasticpress-facet .searchable .inner{max-height:20em;overflow:scroll}.widget_ep-facet .term.hide,.wp-block-elasticpress-facet .term.hide{display:none}.widget_ep-facet .empty-term,.wp-block-elasticpress-facet .empty-term{opacity:.5;position:relative}.widget_ep-facet .empty-term:after,.wp-block-elasticpress-facet .empty-term:after{bottom:0;content:" ";display:block;left:0;position:absolute;right:0;top:0;width:100%;z-index:2}.widget_ep-facet .level-1,.wp-block-elasticpress-facet .level-1{padding-left:20px}.widget_ep-facet .level-2,.wp-block-elasticpress-facet .level-2{padding-left:40px}.widget_ep-facet .level-3,.wp-block-elasticpress-facet .level-3{padding-left:60px}.widget_ep-facet .level-4,.wp-block-elasticpress-facet .level-4{padding-left:5pc}.widget_ep-facet .level-5,.wp-block-elasticpress-facet .level-5{padding-left:75pt}.widget_ep-facet input[disabled],.wp-block-elasticpress-facet input[disabled]{cursor:pointer;opacity:1}.widget_ep-facet .term a,.wp-block-elasticpress-facet .term a{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative}.widget_ep-facet .term a:hover .ep-checkbox,.wp-block-elasticpress-facet .term a:hover .ep-checkbox{background-color:#ccc}.ep-checkbox{-webkit-box-align:center;-ms-flex-align:center;-ms-flex-negative:0;-webkit-box-pack:center;-ms-flex-pack:center;align-items:center;background-color:#eee;display:-webkit-box;display:-ms-flexbox;display:flex;flex-shrink:0;height:1em;justify-content:center;margin-right:.25em;width:1em}.ep-checkbox:after{border:solid #fff;border-width:0 .125em .125em 0;content:"";display:none;height:.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);width:.25em}.ep-checkbox.checked{background-color:#5e5e5e}.ep-checkbox.checked:after{display:block}
+
+&lt;/style&gt;
+&lt;link rel='stylesheet' id='elasticpress-related-posts-block-css'  href='https://baconipsum.com/wp-content/plugins/elasticpress/dist/css/related-posts-block-styles.min.css?ver=4.2.2' type='text/css' media='all' /&gt;
+&lt;style id='global-styles-inline-css' type='text/css'&gt;
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: v... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg timestamp="20220830 15:10:38.487" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220830 15:10:37.464" endtime="20220830 15:10:38.487"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${RESPONSE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220830 15:10:38.487" endtime="20220830 15:10:38.487"/>
+</kw>
+<status status="PASS" starttime="20220830 15:10:37.451" endtime="20220830 15:10:38.494"/>
+</test>
+<test id="s1-t2" name="Scenario 02: Teste bacon ipsum Method GET zero paragrafos" line="17">
+<kw name="GET" library="RequestsLibrary">
+<var>${RESPONSE}</var>
+<arg>${URL}</arg>
+<arg>params=paras=0</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20220830 15:10:39.447" level="INFO">GET Request : url=https://baconipsum.com/?paras=0 
+ path_url=/?paras=0 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220830 15:10:39.447" level="INFO">GET Response : url=https://baconipsum.com/?paras=0 
+ status=200, reason=OK 
+ headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Tue, 30 Aug 2022 18:10:37 GMT', 'Content-Type': 'text/html; charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Cookie', 'X-Pingback': 'https://baconipsum.com/xmlrpc.php', 'Link': '&lt;https://baconipsum.com/wp-json/&gt;; rel="https://api.w.org/", &lt;https://baconipsum.com/wp-json/wp/v2/pages/4&gt;; rel="alternate"; type="application/json", &lt;https://wp.me/P6uPqz-4&gt;; rel=shortlink', 'Last-Modified': 'Tue, 30 Aug 2022 18:10:37 GMT', 'Cache-Control': 'max-age=300, must-revalidate', 'Content-Encoding': 'gzip'} 
+ body=&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+
+&lt;!-- quit looking up my skirt steak  --&gt;
+
+&lt;head&gt;
+&lt;meta charset="UTF-8" /&gt;
+&lt;meta name="HandheldFriendly" content="True" /&gt;
+&lt;meta property="fb:pages" content="280638025309360" /&gt;
+&lt;meta name="MobileOptimized" content="320" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+&lt;title&gt;Bacon Ipsum - A Meatier Lorem Ipsum Generator&lt;/title&gt;
+&lt;meta name="blitz" content="mu-b9572eaa-3cd823e3-1364253f-dc9957c1" /&gt;
+&lt;link rel="apple-touch-icon" href="https://baconipsum.com/wp-content/themes/baconipsum-custom-theme-v2/images/apple-touch-icon.png" /&gt;
+&lt;link rel="profile" href="http://gmpg.org/xfn/11" /&gt;
+&lt;link rel="pingback" href="https://baconipsum.com/xmlrpc.php" /&gt;
+&lt;meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' /&gt;
+
+	&lt;!-- This site is optimized with the Yoast SEO plugin v19.6 - https://yoast.com/wordpress/plugins/seo/ --&gt;
+	&lt;meta name="description" content="Does your lorem ipsum text long for something a little meatier? Give our generator a try... it&amp;#039;s tasty!" /&gt;
+	&lt;link rel="canonical" href="https://baconipsum.com/" /&gt;
+	&lt;meta property="og:locale" content="en_US" /&gt;
+	&lt;meta property="og:type" content="website" /&gt;
+	&lt;meta property="og:title" content="Bacon Ipsum - A Meatier Lorem Ipsum Generator" /&gt;
+	&lt;meta property="og:description" content="Does your lorem ipsum text long for something a little meatier? Give our generator a try... it&amp;#039;s tasty!" /&gt;
+	&lt;meta property="og:url" content="https://baconipsum.com/" /&gt;
+	&lt;meta property="og:site_name" content="Bacon Ipsum" /&gt;
+	&lt;meta property="article:publisher" content="https://www.facebook.com/BaconIpsum" /&gt;
+	&lt;meta property="article:modified_time" content="2021-11-18T16:46:53+00:00" /&gt;
+	&lt;meta property="og:image" content="https://baconipsum.com/wp-content/uploads/2015/01/bacon-ipsum-square-200-200.jpg" /&gt;
+	&lt;meta property="og:image:width" content="200" /&gt;
+	&lt;meta property="og:image:height" content="200" /&gt;
+	&lt;meta property="og:image:type" content="image/jpeg" /&gt;
+	&lt;meta name="twitter:card" content="summary" /&gt;
+	&lt;meta name="twitter:site" content="@baconipsum" /&gt;
+	&lt;meta name="twitter:label1" content="Est. reading time" /&gt;
+	&lt;meta name="twitter:data1" content="1 minute" /&gt;
+	&lt;script type="application/ld+json" class="yoast-schema-graph"&gt;{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://baconipsum.com/","url":"https://baconipsum.com/","name":"Bacon Ipsum - A Meatier Lorem Ipsum Generator","isPartOf":{"@id":"https://baconipsum.com/#website"},"datePublished":"2011-06-04T02:40:21+00:00","dateModified":"2021-11-18T16:46:53+00:00","description":"Does your lorem ipsum text long for something a little meatier? Give our generator a try... it's tasty!","breadcrumb":{"@id":"https://baconipsum.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://baconipsum.com/"]}]},{"@type":"BreadcrumbList","@id":"https://baconipsum.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://baconipsum.com/#website","url":"https://baconipsum.com/","name":"Bacon Ipsum","description":"A Meatier Lorem Ipsum Generator","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://baconipsum.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}&lt;/script&gt;
+	&lt;!-- / Yoast SEO plugin. --&gt;
+
+
+&lt;link rel='dns-prefetch' href='//secure.gravatar.com' /&gt;
+&lt;link rel='dns-prefetch' href='//baconipsum.com' /&gt;
+&lt;link rel='dns-prefetch' href='//s.w.org' /&gt;
+&lt;link rel='dns-prefetch' href='//v0.wordpress.com' /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Bacon Ipsum &amp;raquo; Feed" href="https://baconipsum.com/feed/" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Bacon Ipsum &amp;raquo; Comments Feed" href="https://baconipsum.com/comments/feed/" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Bacon Ipsum &amp;raquo; Home Comments Feed" href="https://baconipsum.com/home/feed/" /&gt;
+&lt;link rel='stylesheet' id='wp-block-library-css'  href='https://baconipsum.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.1' type='text/css' media='all' /&gt;
+&lt;style id='wp-block-library-inline-css' type='text/css'&gt;
+.has-text-align-justify{text-align:justify;}
+&lt;/style&gt;
+&lt;link rel='stylesheet' id='mediaelement-css'  href='https://baconipsum.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='wp-mediaelement-css'  href='https://baconipsum.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.1' type='text/css' media='all' /&gt;
+&lt;style id='elasticpress-facet-style-inline-css' type='text/css'&gt;
+.widget_ep-facet input[type=search],.wp-block-elasticpress-facet input[type=search]{margin-bottom:1rem}.widget_ep-facet .searchable .inner,.wp-block-elasticpress-facet .searchable .inner{max-height:20em;overflow:scroll}.widget_ep-facet .term.hide,.wp-block-elasticpress-facet .term.hide{display:none}.widget_ep-facet .empty-term,.wp-block-elasticpress-facet .empty-term{opacity:.5;position:relative}.widget_ep-facet .empty-term:after,.wp-block-elasticpress-facet .empty-term:after{bottom:0;content:" ";display:block;left:0;position:absolute;right:0;top:0;width:100%;z-index:2}.widget_ep-facet .level-1,.wp-block-elasticpress-facet .level-1{padding-left:20px}.widget_ep-facet .level-2,.wp-block-elasticpress-facet .level-2{padding-left:40px}.widget_ep-facet .level-3,.wp-block-elasticpress-facet .level-3{padding-left:60px}.widget_ep-facet .level-4,.wp-block-elasticpress-facet .level-4{padding-left:5pc}.widget_ep-facet .level-5,.wp-block-elasticpress-facet .level-5{padding-left:75pt}.widget_ep-facet input[disabled],.wp-block-elasticpress-facet input[disabled]{cursor:pointer;opacity:1}.widget_ep-facet .term a,.wp-block-elasticpress-facet .term a{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative}.widget_ep-facet .term a:hover .ep-checkbox,.wp-block-elasticpress-facet .term a:hover .ep-checkbox{background-color:#ccc}.ep-checkbox{-webkit-box-align:center;-ms-flex-align:center;-ms-flex-negative:0;-webkit-box-pack:center;-ms-flex-pack:center;align-items:center;background-color:#eee;display:-webkit-box;display:-ms-flexbox;display:flex;flex-shrink:0;height:1em;justify-content:center;margin-right:.25em;width:1em}.ep-checkbox:after{border:solid #fff;border-width:0 .125em .125em 0;content:"";display:none;height:.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);width:.25em}.ep-checkbox.checked{background-color:#5e5e5e}.ep-checkbox.checked:after{display:block}
+
+&lt;/style&gt;
+&lt;link rel='stylesheet' id='elasticpress-related-posts-block-css'  href='https://baconipsum.com/wp-content/plugins/elasticpress/dist/css/related-posts-block-styles.min.css?ver=4.2.2' type='text/css' media='all' /&gt;
+&lt;style id='global-styles-inline-css' type='text/css'&gt;
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: v... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg timestamp="20220830 15:10:39.447" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220830 15:10:38.496" endtime="20220830 15:10:39.447"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${RESPONSE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220830 15:10:39.447" endtime="20220830 15:10:39.447"/>
+</kw>
+<status status="PASS" starttime="20220830 15:10:38.495" endtime="20220830 15:10:39.460"/>
+</test>
+<test id="s1-t3" name="Scenario 03: Teste bacon ipsum Method GET mais que 99 paragrafos" line="21">
+<kw name="GET" library="RequestsLibrary">
+<var>${RESPONSE}</var>
+<arg>${URL}</arg>
+<arg>params=paras=100</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20220830 15:10:40.409" level="INFO">GET Request : url=https://baconipsum.com/?paras=100 
+ path_url=/?paras=100 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220830 15:10:40.409" level="INFO">GET Response : url=https://baconipsum.com/?paras=100 
+ status=200, reason=OK 
+ headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Tue, 30 Aug 2022 18:10:38 GMT', 'Content-Type': 'text/html; charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Cookie', 'X-Pingback': 'https://baconipsum.com/xmlrpc.php', 'Link': '&lt;https://baconipsum.com/wp-json/&gt;; rel="https://api.w.org/", &lt;https://baconipsum.com/wp-json/wp/v2/pages/4&gt;; rel="alternate"; type="application/json", &lt;https://wp.me/P6uPqz-4&gt;; rel=shortlink', 'Content-Encoding': 'gzip'} 
+ body=&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+
+&lt;!-- quit looking up my skirt steak  --&gt;
+
+&lt;head&gt;
+&lt;meta charset="UTF-8" /&gt;
+&lt;meta name="HandheldFriendly" content="True" /&gt;
+&lt;meta property="fb:pages" content="280638025309360" /&gt;
+&lt;meta name="MobileOptimized" content="320" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+&lt;title&gt;Bacon Ipsum - A Meatier Lorem Ipsum Generator&lt;/title&gt;
+&lt;meta name="blitz" content="mu-b9572eaa-3cd823e3-1364253f-dc9957c1" /&gt;
+&lt;link rel="apple-touch-icon" href="https://baconipsum.com/wp-content/themes/baconipsum-custom-theme-v2/images/apple-touch-icon.png" /&gt;
+&lt;link rel="profile" href="http://gmpg.org/xfn/11" /&gt;
+&lt;link rel="pingback" href="https://baconipsum.com/xmlrpc.php" /&gt;
+&lt;meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' /&gt;
+
+	&lt;!-- This site is optimized with the Yoast SEO plugin v19.6 - https://yoast.com/wordpress/plugins/seo/ --&gt;
+	&lt;meta name="description" content="Does your lorem ipsum text long for something a little meatier? Give our generator a try... it&amp;#039;s tasty!" /&gt;
+	&lt;link rel="canonical" href="https://baconipsum.com/" /&gt;
+	&lt;meta property="og:locale" content="en_US" /&gt;
+	&lt;meta property="og:type" content="website" /&gt;
+	&lt;meta property="og:title" content="Bacon Ipsum - A Meatier Lorem Ipsum Generator" /&gt;
+	&lt;meta property="og:description" content="Does your lorem ipsum text long for something a little meatier? Give our generator a try... it&amp;#039;s tasty!" /&gt;
+	&lt;meta property="og:url" content="https://baconipsum.com/" /&gt;
+	&lt;meta property="og:site_name" content="Bacon Ipsum" /&gt;
+	&lt;meta property="article:publisher" content="https://www.facebook.com/BaconIpsum" /&gt;
+	&lt;meta property="article:modified_time" content="2021-11-18T16:46:53+00:00" /&gt;
+	&lt;meta property="og:image" content="https://baconipsum.com/wp-content/uploads/2015/01/bacon-ipsum-square-200-200.jpg" /&gt;
+	&lt;meta property="og:image:width" content="200" /&gt;
+	&lt;meta property="og:image:height" content="200" /&gt;
+	&lt;meta property="og:image:type" content="image/jpeg" /&gt;
+	&lt;meta name="twitter:card" content="summary" /&gt;
+	&lt;meta name="twitter:site" content="@baconipsum" /&gt;
+	&lt;meta name="twitter:label1" content="Est. reading time" /&gt;
+	&lt;meta name="twitter:data1" content="1 minute" /&gt;
+	&lt;script type="application/ld+json" class="yoast-schema-graph"&gt;{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://baconipsum.com/","url":"https://baconipsum.com/","name":"Bacon Ipsum - A Meatier Lorem Ipsum Generator","isPartOf":{"@id":"https://baconipsum.com/#website"},"datePublished":"2011-06-04T02:40:21+00:00","dateModified":"2021-11-18T16:46:53+00:00","description":"Does your lorem ipsum text long for something a little meatier? Give our generator a try... it's tasty!","breadcrumb":{"@id":"https://baconipsum.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://baconipsum.com/"]}]},{"@type":"BreadcrumbList","@id":"https://baconipsum.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://baconipsum.com/#website","url":"https://baconipsum.com/","name":"Bacon Ipsum","description":"A Meatier Lorem Ipsum Generator","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://baconipsum.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}&lt;/script&gt;
+	&lt;!-- / Yoast SEO plugin. --&gt;
+
+
+&lt;link rel='dns-prefetch' href='//secure.gravatar.com' /&gt;
+&lt;link rel='dns-prefetch' href='//baconipsum.com' /&gt;
+&lt;link rel='dns-prefetch' href='//s.w.org' /&gt;
+&lt;link rel='dns-prefetch' href='//v0.wordpress.com' /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Bacon Ipsum &amp;raquo; Feed" href="https://baconipsum.com/feed/" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Bacon Ipsum &amp;raquo; Comments Feed" href="https://baconipsum.com/comments/feed/" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Bacon Ipsum &amp;raquo; Home Comments Feed" href="https://baconipsum.com/home/feed/" /&gt;
+&lt;link rel='stylesheet' id='wp-block-library-css'  href='https://baconipsum.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.1' type='text/css' media='all' /&gt;
+&lt;style id='wp-block-library-inline-css' type='text/css'&gt;
+.has-text-align-justify{text-align:justify;}
+&lt;/style&gt;
+&lt;link rel='stylesheet' id='mediaelement-css'  href='https://baconipsum.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='wp-mediaelement-css'  href='https://baconipsum.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.1' type='text/css' media='all' /&gt;
+&lt;style id='elasticpress-facet-style-inline-css' type='text/css'&gt;
+.widget_ep-facet input[type=search],.wp-block-elasticpress-facet input[type=search]{margin-bottom:1rem}.widget_ep-facet .searchable .inner,.wp-block-elasticpress-facet .searchable .inner{max-height:20em;overflow:scroll}.widget_ep-facet .term.hide,.wp-block-elasticpress-facet .term.hide{display:none}.widget_ep-facet .empty-term,.wp-block-elasticpress-facet .empty-term{opacity:.5;position:relative}.widget_ep-facet .empty-term:after,.wp-block-elasticpress-facet .empty-term:after{bottom:0;content:" ";display:block;left:0;position:absolute;right:0;top:0;width:100%;z-index:2}.widget_ep-facet .level-1,.wp-block-elasticpress-facet .level-1{padding-left:20px}.widget_ep-facet .level-2,.wp-block-elasticpress-facet .level-2{padding-left:40px}.widget_ep-facet .level-3,.wp-block-elasticpress-facet .level-3{padding-left:60px}.widget_ep-facet .level-4,.wp-block-elasticpress-facet .level-4{padding-left:5pc}.widget_ep-facet .level-5,.wp-block-elasticpress-facet .level-5{padding-left:75pt}.widget_ep-facet input[disabled],.wp-block-elasticpress-facet input[disabled]{cursor:pointer;opacity:1}.widget_ep-facet .term a,.wp-block-elasticpress-facet .term a{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative}.widget_ep-facet .term a:hover .ep-checkbox,.wp-block-elasticpress-facet .term a:hover .ep-checkbox{background-color:#ccc}.ep-checkbox{-webkit-box-align:center;-ms-flex-align:center;-ms-flex-negative:0;-webkit-box-pack:center;-ms-flex-pack:center;align-items:center;background-color:#eee;display:-webkit-box;display:-ms-flexbox;display:flex;flex-shrink:0;height:1em;justify-content:center;margin-right:.25em;width:1em}.ep-checkbox:after{border:solid #fff;border-width:0 .125em .125em 0;content:"";display:none;height:.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);width:.25em}.ep-checkbox.checked{background-color:#5e5e5e}.ep-checkbox.checked:after{display:block}
+
+&lt;/style&gt;
+&lt;link rel='stylesheet' id='elasticpress-related-posts-block-css'  href='https://baconipsum.com/wp-content/plugins/elasticpress/dist/css/related-posts-block-styles.min.css?ver=4.2.2' type='text/css' media='all' /&gt;
+&lt;style id='global-styles-inline-css' type='text/css'&gt;
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: v... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg timestamp="20220830 15:10:40.409" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220830 15:10:39.463" endtime="20220830 15:10:40.409"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${RESPONSE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220830 15:10:40.409" endtime="20220830 15:10:40.409"/>
+</kw>
+<status status="PASS" starttime="20220830 15:10:39.462" endtime="20220830 15:10:40.422"/>
+</test>
+<test id="s1-t4" name="Scenario 04: Teste bacon ipsum Method GET inicio com Bacon ipsum dolor amet" line="25">
+<kw name="GET" library="RequestsLibrary">
+<var>${RESPONSE }</var>
+<arg>${URL}</arg>
+<arg>params=paras=0</arg>
+<arg>params=start-with-lorem=1</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20220830 15:10:41.348" level="INFO">GET Request : url=https://baconipsum.com/?start-with-lorem=1 
+ path_url=/?start-with-lorem=1 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220830 15:10:41.348" level="INFO">GET Response : url=https://baconipsum.com/?start-with-lorem=1 
+ status=200, reason=OK 
+ headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Tue, 30 Aug 2022 18:10:38 GMT', 'Content-Type': 'text/html; charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Cookie', 'X-Pingback': 'https://baconipsum.com/xmlrpc.php', 'Link': '&lt;https://baconipsum.com/wp-json/&gt;; rel="https://api.w.org/", &lt;https://baconipsum.com/wp-json/wp/v2/pages/4&gt;; rel="alternate"; type="application/json", &lt;https://wp.me/P6uPqz-4&gt;; rel=shortlink', 'Content-Encoding': 'gzip'} 
+ body=&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+
+&lt;!-- quit looking up my skirt steak  --&gt;
+
+&lt;head&gt;
+&lt;meta charset="UTF-8" /&gt;
+&lt;meta name="HandheldFriendly" content="True" /&gt;
+&lt;meta property="fb:pages" content="280638025309360" /&gt;
+&lt;meta name="MobileOptimized" content="320" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+&lt;title&gt;Bacon Ipsum - A Meatier Lorem Ipsum Generator&lt;/title&gt;
+&lt;meta name="blitz" content="mu-b9572eaa-3cd823e3-1364253f-dc9957c1" /&gt;
+&lt;link rel="apple-touch-icon" href="https://baconipsum.com/wp-content/themes/baconipsum-custom-theme-v2/images/apple-touch-icon.png" /&gt;
+&lt;link rel="profile" href="http://gmpg.org/xfn/11" /&gt;
+&lt;link rel="pingback" href="https://baconipsum.com/xmlrpc.php" /&gt;
+&lt;meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' /&gt;
+
+	&lt;!-- This site is optimized with the Yoast SEO plugin v19.6 - https://yoast.com/wordpress/plugins/seo/ --&gt;
+	&lt;meta name="description" content="Does your lorem ipsum text long for something a little meatier? Give our generator a try... it&amp;#039;s tasty!" /&gt;
+	&lt;link rel="canonical" href="https://baconipsum.com/" /&gt;
+	&lt;meta property="og:locale" content="en_US" /&gt;
+	&lt;meta property="og:type" content="website" /&gt;
+	&lt;meta property="og:title" content="Bacon Ipsum - A Meatier Lorem Ipsum Generator" /&gt;
+	&lt;meta property="og:description" content="Does your lorem ipsum text long for something a little meatier? Give our generator a try... it&amp;#039;s tasty!" /&gt;
+	&lt;meta property="og:url" content="https://baconipsum.com/" /&gt;
+	&lt;meta property="og:site_name" content="Bacon Ipsum" /&gt;
+	&lt;meta property="article:publisher" content="https://www.facebook.com/BaconIpsum" /&gt;
+	&lt;meta property="article:modified_time" content="2021-11-18T16:46:53+00:00" /&gt;
+	&lt;meta property="og:image" content="https://baconipsum.com/wp-content/uploads/2015/01/bacon-ipsum-square-200-200.jpg" /&gt;
+	&lt;meta property="og:image:width" content="200" /&gt;
+	&lt;meta property="og:image:height" content="200" /&gt;
+	&lt;meta property="og:image:type" content="image/jpeg" /&gt;
+	&lt;meta name="twitter:card" content="summary" /&gt;
+	&lt;meta name="twitter:site" content="@baconipsum" /&gt;
+	&lt;meta name="twitter:label1" content="Est. reading time" /&gt;
+	&lt;meta name="twitter:data1" content="1 minute" /&gt;
+	&lt;script type="application/ld+json" class="yoast-schema-graph"&gt;{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://baconipsum.com/","url":"https://baconipsum.com/","name":"Bacon Ipsum - A Meatier Lorem Ipsum Generator","isPartOf":{"@id":"https://baconipsum.com/#website"},"datePublished":"2011-06-04T02:40:21+00:00","dateModified":"2021-11-18T16:46:53+00:00","description":"Does your lorem ipsum text long for something a little meatier? Give our generator a try... it's tasty!","breadcrumb":{"@id":"https://baconipsum.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://baconipsum.com/"]}]},{"@type":"BreadcrumbList","@id":"https://baconipsum.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://baconipsum.com/#website","url":"https://baconipsum.com/","name":"Bacon Ipsum","description":"A Meatier Lorem Ipsum Generator","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://baconipsum.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}&lt;/script&gt;
+	&lt;!-- / Yoast SEO plugin. --&gt;
+
+
+&lt;link rel='dns-prefetch' href='//secure.gravatar.com' /&gt;
+&lt;link rel='dns-prefetch' href='//baconipsum.com' /&gt;
+&lt;link rel='dns-prefetch' href='//s.w.org' /&gt;
+&lt;link rel='dns-prefetch' href='//v0.wordpress.com' /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Bacon Ipsum &amp;raquo; Feed" href="https://baconipsum.com/feed/" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Bacon Ipsum &amp;raquo; Comments Feed" href="https://baconipsum.com/comments/feed/" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Bacon Ipsum &amp;raquo; Home Comments Feed" href="https://baconipsum.com/home/feed/" /&gt;
+&lt;link rel='stylesheet' id='wp-block-library-css'  href='https://baconipsum.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.1' type='text/css' media='all' /&gt;
+&lt;style id='wp-block-library-inline-css' type='text/css'&gt;
+.has-text-align-justify{text-align:justify;}
+&lt;/style&gt;
+&lt;link rel='stylesheet' id='mediaelement-css'  href='https://baconipsum.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='wp-mediaelement-css'  href='https://baconipsum.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.1' type='text/css' media='all' /&gt;
+&lt;style id='elasticpress-facet-style-inline-css' type='text/css'&gt;
+.widget_ep-facet input[type=search],.wp-block-elasticpress-facet input[type=search]{margin-bottom:1rem}.widget_ep-facet .searchable .inner,.wp-block-elasticpress-facet .searchable .inner{max-height:20em;overflow:scroll}.widget_ep-facet .term.hide,.wp-block-elasticpress-facet .term.hide{display:none}.widget_ep-facet .empty-term,.wp-block-elasticpress-facet .empty-term{opacity:.5;position:relative}.widget_ep-facet .empty-term:after,.wp-block-elasticpress-facet .empty-term:after{bottom:0;content:" ";display:block;left:0;position:absolute;right:0;top:0;width:100%;z-index:2}.widget_ep-facet .level-1,.wp-block-elasticpress-facet .level-1{padding-left:20px}.widget_ep-facet .level-2,.wp-block-elasticpress-facet .level-2{padding-left:40px}.widget_ep-facet .level-3,.wp-block-elasticpress-facet .level-3{padding-left:60px}.widget_ep-facet .level-4,.wp-block-elasticpress-facet .level-4{padding-left:5pc}.widget_ep-facet .level-5,.wp-block-elasticpress-facet .level-5{padding-left:75pt}.widget_ep-facet input[disabled],.wp-block-elasticpress-facet input[disabled]{cursor:pointer;opacity:1}.widget_ep-facet .term a,.wp-block-elasticpress-facet .term a{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative}.widget_ep-facet .term a:hover .ep-checkbox,.wp-block-elasticpress-facet .term a:hover .ep-checkbox{background-color:#ccc}.ep-checkbox{-webkit-box-align:center;-ms-flex-align:center;-ms-flex-negative:0;-webkit-box-pack:center;-ms-flex-pack:center;align-items:center;background-color:#eee;display:-webkit-box;display:-ms-flexbox;display:flex;flex-shrink:0;height:1em;justify-content:center;margin-right:.25em;width:1em}.ep-checkbox:after{border:solid #fff;border-width:0 .125em .125em 0;content:"";display:none;height:.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);width:.25em}.ep-checkbox.checked{background-color:#5e5e5e}.ep-checkbox.checked:after{display:block}
+
+&lt;/style&gt;
+&lt;link rel='stylesheet' id='elasticpress-related-posts-block-css'  href='https://baconipsum.com/wp-content/plugins/elasticpress/dist/css/related-posts-block-styles.min.css?ver=4.2.2' type='text/css' media='all' /&gt;
+&lt;style id='global-styles-inline-css' type='text/css'&gt;
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: v... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg timestamp="20220830 15:10:41.348" level="INFO">${RESPONSE } = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220830 15:10:40.427" endtime="20220830 15:10:41.348"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${RESPONSE }</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220830 15:10:41.348" endtime="20220830 15:10:41.348"/>
+</kw>
+<status status="PASS" starttime="20220830 15:10:40.425" endtime="20220830 15:10:41.363"/>
+</test>
+<status status="PASS" starttime="20220830 15:10:37.306" endtime="20220830 15:10:41.367"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Desafio">Desafio</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
